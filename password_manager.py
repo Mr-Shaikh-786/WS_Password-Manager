@@ -13,8 +13,8 @@ from pathlib import Path
 from argon2.low_level import Type, hash_secret_raw
 from cryptography.fernet import Fernet, InvalidToken
 
-APP_NAME = "SYNTECXHUB Password Manager"
-DEFAULT_VAULT = Path.home() / ".syntecxhub_vault.json"
+APP_NAME = "WS_Password Manager"
+DEFAULT_VAULT = Path.home() / ".WS_Password_vault.json"
 KDF_VERSION = 1
 
 
