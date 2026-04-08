@@ -23,7 +23,7 @@ A secure local password manager written in Python that stores credentials encryp
 ## Project structure
 
 ```text
-syntecxhub-password-manager/
+WS_Password-Manager/
 ├── password_manager.py
 ├── requirements.txt
 └── README.md
@@ -69,7 +69,7 @@ python3 password_manager.py add github alice
 Add with an inline password:
 
 ```bash
-python3 password_manager.py add github alice --password "MyStrongPassword!123"
+python3 password_manager.py add github alice --password "MyStrongPassword@123"
 ```
 
 Generate a strong password automatically:
@@ -115,7 +115,7 @@ The file on disk remains encrypted. A simplified example looks like this:
 ```json
 {
   "meta": {
-    "app": "SYNTECXHUB Password Manager",
+    "app": "WS_Password Manager",
     "version": 1,
     "created_at": "2026-04-08T00:00:00+00:00",
     "updated_at": "2026-04-08T00:00:00+00:00",
@@ -133,46 +133,10 @@ The file on disk remains encrypted. A simplified example looks like this:
 }
 ```
 
-## GitHub setup
-
-Initialize and push to GitHub:
-
-```bash
-git init
-git add .
-git commit -m "Add SYNTECXHUB password manager"
-git branch -M main
-git remote add origin https://github.com/<your-username>/syntecxhub-password-manager.git
-git push -u origin main
-```
 
 ## Notes
 
 - Keep your master password strong and memorable.
 - If you lose the master password, the vault cannot be decrypted.
-- Do not commit your real vault file to GitHub.
-- Add the vault file to `.gitignore` if you keep it inside the project directory.
 
-## Suggested `.gitignore`
-
-```gitignore
-__pycache__/
-*.pyc
-.venv/
-.env
-.syntecxhub_vault.json
-*.log
-```
-
-## Future improvements
-
-- Clipboard copy with timed clearing
-- Entry update/edit command
-- Key rotation support
-- Export/import with re-encryption
-- TOTP support
-- GUI frontend with Tkinter or PySide
-
-## License
-
-You can add an MIT license for open-source GitHub hosting.
+---
