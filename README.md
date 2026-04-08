@@ -1,4 +1,4 @@
-# SYNTECXHUB Project 2 - Local Password Manager
+# WS_Password Manager
 
 A secure local password manager written in Python that stores credentials encrypted on disk using symmetric authenticated encryption. The vault uses a master password, derives an encryption key with Argon2id, and stores entries inside an encrypted JSON-based file format.
 
