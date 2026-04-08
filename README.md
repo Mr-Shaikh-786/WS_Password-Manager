@@ -45,7 +45,7 @@ pip install -r requirements.txt
 By default, the vault is stored at:
 
 ```bash
-~/.syntecxhub_vault.json
+~/.WS_Password_vault.json
 ```
 
 You can also specify a custom vault path with `--vault`.
